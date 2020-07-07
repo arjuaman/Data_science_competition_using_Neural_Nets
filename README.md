@@ -20,24 +20,20 @@ For the training set, the outcome (also known as the “ground truth”) for eac
 The model will be based on “features” like passengers’ gender and class. 
 Can also use feature engineering to create new features.
 
-The test set should be used to see how well your model performs on unseen data. For the test set, we do not provide the ground truth for each passenger. It is your job to predict these outcomes. For each passenger in the test set, use the model you trained to predict whether or not they survived the sinking of the Titanic.
-
-We also include gender_submission.csv, a set of predictions that assume all and only female passengers survive, as an example of what a submission file should look like.
-
 Data Dictionary:
 
-Variable	        Definition                                  	Key
-
-survival	         Survival	                            0 = No, 1 = Yes
-pclass	           Ticket class	                            1 = 1st, 2 = 2nd, 3 = 3rd
-sex                	   Sex	
-Age                Age in years	
-sibsp	      # of siblings / spouses aboard the Titanic	
-parch	      # of parents / children aboard the Titanic	
-ticket	           Ticket number	
-fare	          Passenger fare	
-cabin	          Cabin number	
-embarked	   Port of Embarkation           	            C = Cherbourg, Q = Queenstown, S = Southampton
+|   Variable	  |      Definition                          |           	Key                                       |
+|   ---------   |  :-----------------------------------:   |   ------------------------------------------------:  |
+|   survival	  |       Survival	                         |          0 = No, 1 = Yes                             |
+|   pclass	    |       Ticket class	                     |          1 = 1st, 2 = 2nd, 3 = 3rd                   |
+|   sex         |       	   Sex	                         |                                                      |
+|   Age         |       Age in years	                     |                                                      |
+|   sibsp	      |# of siblings / spouses aboard the Titanic|	                                                    |
+|   parch	      |# of parents / children aboard the Titanic|	                                                    |
+|   ticket	    |       Ticket number	                     |                                                      |
+|   fare	      |    Passenger fare	                       |                                                      |
+|   cabin	      |    Cabin number	                         |                                                      |
+|   embarked	  | Port of Embarkation           	         |      C = Cherbourg, Q = Queenstown, S = Southampton  |
 
 Variable Notes:
 
@@ -63,3 +59,13 @@ Modelling:
 I coded a Neural Net model with around 77 to 79% accuracy.
 
 Then I compared it against popular models like Logisric Regression, SVM, Random Forest, Keras, Decision Tress etc from respective libraries.
+
+| Models              | Accuracy      | 
+| -------------       |:-------------:| 
+| Neural Network      |      0.74     | 
+| Keras 3-layered NN  |      0.77     | 
+| Logistic regression |      0.7734   | 
+| Random Forest       |      0.768    | 
+| SVM                 |      0.73     | 
+| KNN                 |      0.72     | 
+| Decision Trees      |      0.71     |    $1        |
